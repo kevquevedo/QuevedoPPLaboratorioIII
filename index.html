@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>PP - Kevin Quevedo</title>
+</head>
+<body>
+
+    <!--DIV TABLA Y SPINNER-->
+    <div id="divGeneral">
+        <!--DIV DE SPINNER-->
+        <div id="divSpinner" class="spinner" hidden>
+
+        </div>
+        <!--DIV DE TABLA DE PERSONAS-->
+        <div id="divTabla">
+            <table id="tabla">
+                <tr id=header> 
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Localidad</th>
+                    <th>Sexo</th>
+                </tr>
+            </table>
+        </div> 
+    </div>
+    <br>
+    <br>
+    <!--DIV DE MODIFICAR SECCION-->
+    <div id="divModificarPersona" hidden class="content-modal">
+
+        <!--Boton de cerrar.-->
+        <input type="button" value="X" id="btnCerrar" class="btnCerrar">
+        <br>
+        <br>
+        <!--Seccion Nombre.-->
+        <label for="txtNombre">Nombre</label>
+        <input type="text" name="txtNombre" id="txtNombre">
+        <br>
+        <br>
+        <!--Seccion Apellido.-->
+        <label for="txtApellido">Apellido</label>
+        <input type="text" name="txtApellido" id="txtApellido">
+        <br>
+        <br>
+        <!--Seccion Localidad.-->
+        <label for="txtLocalidad">Localidad</label>
+        <input type="text" name="txtLocalidad" id="txtLocalidad">
+        <br>
+        <br>
+        <!--Seccion Sexo.-->    
+        <label for="radioSexo">Sexo</label>
+        <br>
+        <input type="radio" name="radioSexo" id="female" value="Female">
+        <label for="sexo">Femenino</label>
+        <br>
+        <input type="radio" name="radioSexo" id="male" value="Male">
+        <label for="sexo">Masculino</label>
+        <br>
+        <br>
+        <br>
+        <!--Boton Modificar.-->
+        <input type="button" value="Modificar" id="btnModificar" class="btnModificar">
+    </div>
+    <br>
+    <br>
+    <!--Cargar Localidades.-->
+    <input type="button" value="Cargar Localidades" id="btnLocalidades" class="btnLocalidades">
+    <br>
+    <!--DIV TABLA DE LOCALIDADES-->
+    <div id="divLocalidades">
+        <!--DIV DE TABLA DE PERSONAS-->
+        <div id="divTablaLocalidades">
+            <table id="tablaLocalidades">
+                <tr id=header> 
+                    <th>Id</th>
+                    <th>Localidad</th>
+                </tr>
+            </table>
+        </div> 
+    </div>
+</body>
+</html>
